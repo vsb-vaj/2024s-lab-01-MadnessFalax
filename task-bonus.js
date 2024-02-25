@@ -41,13 +41,13 @@ const drawJavascriptWord = (word = "javascript") => {
   var word = word.toUpperCase();
 
   var base = "*";
-  for (i = 1; i < word.length; i++) {
+  for (let i = 1; i < word.length; i++) {
     base += " *";
   }
 
   console.log(base);
 
-  for (i = word.length - 1; i >= 0; i--) {
+  for (let i = word.length - 1; i >= 0; i--) {
     var last_i = base.lastIndexOf("*");
     base = String(
       base.substring(0, last_i) +
@@ -97,4 +97,4 @@ function test() {
   console.log(getVehiclesAndTopSpeed(vehicles));
 }
 
-// test();
+ // test();

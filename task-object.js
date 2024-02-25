@@ -45,7 +45,7 @@ const personObject = (firstname, lastname, age) => {
 //Your code:
 const getBudgets = (persons) => {
   var bud = 0;
-  for (person of persons) {
+  for (let person of persons) {
     bud += person.budget;
   }
   return bud;
