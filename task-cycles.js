@@ -8,6 +8,12 @@
 // Your code:
 const arrayOfMultiples = (num, length) => {
   // ... write code ...
+  var tmp = Array();
+  for (let i = 0; i < length; i++) {
+    tmp.push(num * (i + 1));
+  }
+
+  return tmp;
 };
 
 // 2 =================================
@@ -21,6 +27,7 @@ const arrayOfMultiples = (num, length) => {
 // Your code:
 const changeDirection = (array) => {
   // ... write code ...
+  return array.toReversed();
 };
 
 // 3 =================================
@@ -32,4 +39,30 @@ const changeDirection = (array) => {
 // Your code:
 const biggerArray = (array1, array2) => {
   // ... write code ...
+  let fn = (prec, cur) => {
+    return prec + cur;
+  }
+
+  let res = Object();
+  res_a = array1.reduce(fn);
+  res_b = array2.reduce(fn);
+
+  res.array = res_a > res_b ? array1 : array2;
+  res.sum = res_a > res_b ? res_a : res_b;
+
+  return res;
 };
+
+function test() {
+  console.log(arrayOfMultiples(5, 7));
+  console.log("----------");
+  console.log(changeDirection([1, 2, 3, 4, 5, 6]));
+  console.log("----------");
+  console.log(changeDirection([]));
+  console.log("----------");
+  console.log(biggerArray([1, 2, 3], [2, 3, 4]));
+  console.log("----------");
+  console.log(biggerArray([1, 2, 3, 4, 5], [50, 50]));
+};
+
+// test();
