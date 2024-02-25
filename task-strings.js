@@ -7,9 +7,7 @@
 // "javascript-is-the-best"
 
 // Your code:
-const parametrize = (input) => {
-
-};
+const parametrize = (input) => {};
 
 // 2 =================================
 // Write function that takes object and return sentence
@@ -18,9 +16,7 @@ const parametrize = (input) => {
 // ➞ Hello Obi-wan from Starwars universe! It is nice to meet you! You look awesome for your 40, young Jedi!
 
 // Your code:
-const giveSentenceForPerson = (obj) => {
-
-};
+const giveSentenceForPerson = (obj) => {};
 
 // 3 =================================
 // Write function that takes string and replace all `a`, `e`, `i`, `o` with *
@@ -28,6 +24,4 @@ const giveSentenceForPerson = (obj) => {
 // replace("Hello Javascript") ➞ "H*ll* J*v*scr*pt"
 
 // Your code:
-const replace = (input) => {
-
-};
+const replace = (input) => {};

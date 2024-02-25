@@ -11,8 +11,6 @@ You can run any file in your console using command `node task-array.js`
 
 Some functions require you to "return" the value, some of them you can just console.log, it's up to you.
 
-
 ## BONUS
+
 You can do all the tasks in the file task-bonus.js to get 1 bonus point
-
-

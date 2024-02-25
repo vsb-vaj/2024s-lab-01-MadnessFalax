@@ -7,7 +7,7 @@
 
 // Your code:
 const arrayOfMultiples = (num, length) => {
-    // ... write code ...
+  // ... write code ...
 };
 
 // 2 =================================
@@ -20,7 +20,7 @@ const arrayOfMultiples = (num, length) => {
 
 // Your code:
 const changeDirection = (array) => {
-// ... write code ...
+  // ... write code ...
 };
 
 // 3 =================================
@@ -31,5 +31,5 @@ const changeDirection = (array) => {
 
 // Your code:
 const biggerArray = (array1, array2) => {
-// ... write code ...
+  // ... write code ...
 };
