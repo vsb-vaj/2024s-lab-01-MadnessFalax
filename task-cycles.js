@@ -41,7 +41,7 @@ const biggerArray = (array1, array2) => {
   // ... write code ...
   let fn = (prec, cur) => {
     return prec + cur;
-  }
+  };
 
   let res = Object();
   res_a = array1.reduce(fn);
@@ -63,6 +63,6 @@ function test() {
   console.log(biggerArray([1, 2, 3], [2, 3, 4]));
   console.log("----------");
   console.log(biggerArray([1, 2, 3, 4, 5], [50, 50]));
-};
+}
 
 // test();

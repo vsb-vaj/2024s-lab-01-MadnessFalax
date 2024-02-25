@@ -2,7 +2,7 @@
 // Checkout useful functions at: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 
 function pr(a) {
-    console.log(a);
+  console.log(a);
 }
 
 // 1 ----
@@ -14,7 +14,7 @@ function pr(a) {
 
 // Your code:
 const volumeOfBox = (obj) => {
-    return obj.width * obj.length * obj.height;
+  return obj.width * obj.length * obj.height;
 };
 
 // 2 ----
@@ -24,13 +24,13 @@ const volumeOfBox = (obj) => {
 
 // Your code:
 const personObject = (firstname, lastname, age) => {
-    var obj = new Object();
-    obj.firstname = firstname;
-    obj.lastname = lastname;
-    obj.age = age;
-    var now = new Date(Date.now());
-    obj.yearOfBirth = now.getFullYear() - age;
-    return obj;
+  var obj = new Object();
+  obj.firstname = firstname;
+  obj.lastname = lastname;
+  obj.age = age;
+  var now = new Date(Date.now());
+  obj.yearOfBirth = now.getFullYear() - age;
+  return obj;
 };
 
 // 3 ----
@@ -44,11 +44,11 @@ const personObject = (firstname, lastname, age) => {
 
 //Your code:
 const getBudgets = (persons) => {
-    var bud = 0;
-    for(person of persons) {
-        bud += person.budget;
-    }
-    return bud;
+  var bud = 0;
+  for (person of persons) {
+    bud += person.budget;
+  }
+  return bud;
 };
 
 // 4 ----
@@ -59,31 +59,41 @@ const getBudgets = (persons) => {
 
 // Your code:
 const sortVehiclesByPrice = (vehicles) => {
-    return vehicles.sort((left, right) => left.price - right.price);
+  return vehicles.sort((left, right) => left.price - right.price);
 };
 
 function test() {
-    pr(volumeOfBox({ width: 2, length: 5, height: 1 }));
-    pr("------------");
-    pr(volumeOfBox({ width: 2, length: 3, height: 5 }));
-    pr("------------");
-    pr(volumeOfBox({ width: 4, length: 2, height: 2 }));
-    pr("------------");
-    pr(personObject("Obi-wan", "Kenobi", "40"));
-    pr("------------");
-    pr(getBudgets([
+  pr(volumeOfBox({ width: 2, length: 5, height: 1 }));
+  pr("------------");
+  pr(volumeOfBox({ width: 2, length: 3, height: 5 }));
+  pr("------------");
+  pr(volumeOfBox({ width: 4, length: 2, height: 2 }));
+  pr("------------");
+  pr(personObject("Obi-wan", "Kenobi", "40"));
+  pr("------------");
+  pr(
+    getBudgets([
       { name: "John", age: 21, budget: 23000 },
-      { name: "Steve",  age: 32, budget: 40000 },
-      { name: "Martin",  age: 16, budget: 2700 }
-    ]));
-    pr("------------");
+      { name: "Steve", age: 32, budget: 40000 },
+      { name: "Martin", age: 16, budget: 2700 },
+    ]),
+  );
+  pr("------------");
 
-    const vehicles = [{name: "Executor Star Dreadnought", price: 999}, {name: "T-47 Airspeeder", price: 5}, {name: "AT-AT", price : 20}];
-    // "For the REPUBLIC!"
-    const vehicles2 = [{name: "Venator-class Star Destroyer", price: 999}, {name: "TX-130 Saber-class fighter tank", price: 5}, {name: "AT-TE", price : 20}];
-    pr(sortVehiclesByPrice(vehicles));
-    pr("------------");
-    pr(sortVehiclesByPrice(vehicles2));
+  const vehicles = [
+    { name: "Executor Star Dreadnought", price: 999 },
+    { name: "T-47 Airspeeder", price: 5 },
+    { name: "AT-AT", price: 20 },
+  ];
+  // "For the REPUBLIC!"
+  const vehicles2 = [
+    { name: "Venator-class Star Destroyer", price: 999 },
+    { name: "TX-130 Saber-class fighter tank", price: 5 },
+    { name: "AT-TE", price: 20 },
+  ];
+  pr(sortVehiclesByPrice(vehicles));
+  pr("------------");
+  pr(sortVehiclesByPrice(vehicles2));
 }
 
 // test();

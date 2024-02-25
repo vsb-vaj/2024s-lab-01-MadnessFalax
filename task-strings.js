@@ -8,7 +8,7 @@
 
 // Your code:
 const parametrize = (input) => {
-    return input.toLowerCase().replaceAll(" ","-");
+  return input.toLowerCase().replaceAll(" ", "-");
 };
 
 // 2 =================================
@@ -19,7 +19,7 @@ const parametrize = (input) => {
 
 // Your code:
 const giveSentenceForPerson = (obj) => {
-    return `Hello ${obj.name} from ${obj.location}! It is nice to meet you! You look awesome for your ${obj.age}, young ${obj.position}!`;
+  return `Hello ${obj.name} from ${obj.location}! It is nice to meet you! You look awesome for your ${obj.age}, young ${obj.position}!`;
 };
 
 // 3 =================================
@@ -29,17 +29,22 @@ const giveSentenceForPerson = (obj) => {
 
 // Your code:
 const replace = (input) => {
-    return input.replaceAll(RegExp("[aeio]", 'g'), '*');
+  return input.replaceAll(RegExp("[aeio]", "g"), "*");
 };
 
-
 function test() {
-    console.log(parametrize("Javascript is the best"));
-    console.log("--------------");
-    console.log(giveSentenceForPerson({name: "Obi-wan", position: "Jedi", age: 40, location: "Starwars universe"}));
-    console.log("--------------");
-    console.log(replace("Hello Javascript"));
-
+  console.log(parametrize("Javascript is the best"));
+  console.log("--------------");
+  console.log(
+    giveSentenceForPerson({
+      name: "Obi-wan",
+      position: "Jedi",
+      age: 40,
+      location: "Starwars universe",
+    }),
+  );
+  console.log("--------------");
+  console.log(replace("Hello Javascript"));
 }
 
 // test();
